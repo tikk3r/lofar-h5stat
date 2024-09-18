@@ -5,8 +5,7 @@ edition = "2021"
 
 [dependencies]
 ratatui = "0.28.1"
-#lofar-h5parm-rs = { git = "https://github.com/tikk3r/lofar-h5parm-rs" }
-lofar-h5parm-rs = { path = "../lofar-h5parm-rs" }
+lofar-h5parm-rs = { git = "https://github.com/tikk3r/lofar-h5parm-rs" }
 crossterm = "0.28.1"
 ratatui-explorer = "0.1.1"
 clap = { version = "4.5.17", features = ["derive"] }
