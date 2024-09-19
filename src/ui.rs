@@ -112,11 +112,11 @@ pub fn ui(frame: &mut Frame, app: &App) {
         {
             match &app.currently_editing {
                 CurrentlyEditing::Solset => Span::styled(
-                    "<Tab> switch panel",
+                    "<up/down> move / <Tab> switch panel",
                     Style::default().fg(Color::LightGreen),
                 ),
                 CurrentlyEditing::Soltab => Span::styled(
-                    "<Enter> Select / <Tab> switch panel",
+                    "<up/down> move / <Enter> Select / <Tab> switch panel",
                     Style::default().fg(Color::LightGreen),
                 ),
                 CurrentlyEditing::Information => Span::styled(

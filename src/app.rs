@@ -179,6 +179,7 @@ impl App {
         let st = &ss.soltabs[self.current_soltab];
 
         let axes = st.get_axes();
+        //let axes_len = axes.iter().map(|x| st.get)
 
         let times = st.get_times();
         let dt = times[1] - times[0];
@@ -204,11 +205,12 @@ impl App {
         let dir = if dirs.len() >= 1 {
             dirs.to_vec()[0].to_string()
         } else {
-            "AAAAAAAAH BUG".to_string()
+            "N/A".to_string()
         };
 
         let mut buf = "".to_string();
         buf.push_str(&format!("Dimensions: {}\n", axes.join(", ")));
+        buf.push_str(&format!("            {}\n", axes.join(", ")));
         buf.push_str("\n");
         buf.push_str(&format!("Directions: {}\n", dir));
         buf.push_str("\n");
