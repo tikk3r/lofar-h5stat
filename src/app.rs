@@ -209,8 +209,9 @@ impl App {
         };
 
         let mut buf = "".to_string();
+        buf.push_str(&format!("Full name: {}\n", st.name));
         buf.push_str(&format!("Dimensions: {}\n", axes.join(", ")));
-        buf.push_str(&format!("            {}\n", axes.join(", ")));
+        buf.push_str(&format!("            \n"));
         buf.push_str("\n");
         buf.push_str(&format!("Directions: {}\n", dir));
         buf.push_str("\n");
